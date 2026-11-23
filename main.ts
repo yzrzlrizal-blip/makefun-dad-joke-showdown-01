@@ -17,6 +17,10 @@ import { join } from "node:path";
 const JOKE =
   "I told my front door a joke. It came completely unhinged.";
 
+// The gate: /output/entry.txt must be UTF-8 text of 1 to 200
+// characters, not only white space. This joke is 57 characters,
+// one line, no trailing newline — verified locally with two runs
+// writing byte-identical output.
 const MAX_CHARS = 200;
 
 // The grader sets MAKEFUN_OUTPUT_DIR; OUTPUT_DIR is the local-test
